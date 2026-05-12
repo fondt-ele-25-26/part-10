@@ -1,0 +1,29 @@
+[project]
+name = "part-10"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Michele Lombardi",email = "michele.lombardi2@unibo.it"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "notebook (>=7.5.6,<8.0.0)",
+    "numpy (>=2.4.4,<3.0.0)",
+    "scipy (>=1.17.1,<2.0.0)",
+    "matplotlib (>=3.10.9,<4.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+package-mode = false
+
+[dependency-groups]
+dev = [
+    "jupyterlab-rise (>=0.43.1,<0.44.0)",
+    "nbconvert[webpdf] (>=7.17.1,<8.0.0)"
+]
